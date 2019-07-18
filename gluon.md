@@ -18,11 +18,14 @@ curl https://zh.d2l.ai/d2l-zh-1.0.zip -o d2l-zh.zip
 unzip d2l-zh.zip && rm d2l-zh.zip
 conda env create -f environment.yml
 # conda env update -f environment.yml
+# conda remove --name gloun --all
+# conda update -n base conda
 conda activate gluon
 set MXNET_GLUON_REPO=https://apache-mxnet.s3.cn-north-1.amazonaws.com.cn/ jupyter notebook --ip 172.22.129.124
 
 ```
 ## GPU
+放弃
 
 ```bash
 nvcc -V # cuda 9.1 准备升级成10.0
